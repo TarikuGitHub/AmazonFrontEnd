@@ -1,0 +1,432 @@
+[debug] [2023-08-11T12:12:59.458Z] ----------------------------------------------------------------------
+[debug] [2023-08-11T12:12:59.460Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Tariku\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-08-11T12:12:59.460Z] CLI Version:   12.4.7
+[debug] [2023-08-11T12:12:59.461Z] Platform:      win32
+[debug] [2023-08-11T12:12:59.461Z] Node Version:  v18.16.0
+[debug] [2023-08-11T12:12:59.461Z] Time:          Fri Aug 11 2023 15:12:59 GMT+0300 (East Africa Time)
+[debug] [2023-08-11T12:12:59.461Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-11T12:12:59.620Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-11T12:12:59.621Z] > authorizing via signed-in user (tarikukussia2010@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2023-08-11T12:12:59.636Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-08-11T12:12:59.636Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-08-11T12:12:59.636Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-08-11T12:12:59.650Z] [hub] writing locator at C:\Users\Tariku\AppData\Local\Temp\hub-project-8040d.json
+[debug] [2023-08-11T12:12:59.675Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-08-11T12:12:59.675Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-08-11T12:12:59.675Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[debug] [2023-08-11T12:12:59.679Z] defaultcredentials: writing to file C:\Users\Tariku\AppData\Roaming\firebase\tarikukussia2010_gmail_com_application_default_credentials.json
+[debug] [2023-08-11T12:12:59.683Z] Setting GAC to C:\Users\Tariku\AppData\Roaming\firebase\tarikukussia2010_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Tariku\\AppData\\Roaming\\firebase\\tarikukussia2010_gmail_com_application_default_credentials.json"}}
+[debug] [2023-08-11T12:12:59.685Z] > refreshing access token with scopes: []
+[debug] [2023-08-11T12:12:59.686Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-08-11T12:12:59.686Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-11T12:13:00.744Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-08-11T12:13:00.744Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-11T12:13:01.047Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/project-8040d/adminSdkConfig [none]
+[debug] [2023-08-11T12:13:02.665Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/project-8040d/adminSdkConfig 200
+[debug] [2023-08-11T12:13:02.665Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/project-8040d/adminSdkConfig {"projectId":"project-8040d","storageBucket":"project-8040d.appspot.com"}
+[debug] [2023-08-11T12:13:02.974Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/project-8040d/sites 
+[debug] [2023-08-11T12:13:06.262Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/project-8040d/sites 200
+[debug] [2023-08-11T12:13:06.262Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/project-8040d/sites {"sites":[{"name":"projects/project-8040d/sites/project-8040d","defaultUrl":"https://project-8040d.web.app","appId":"1:261092366138:web:2fd4c0224fa125a2f66203","type":"DEFAULT_SITE"}]}
+[debug] [2023-08-11T12:13:06.263Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/project-8040d/webApps/1:261092366138:web:2fd4c0224fa125a2f66203/config [none]
+[debug] [2023-08-11T12:13:07.592Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/project-8040d/webApps/1:261092366138:web:2fd4c0224fa125a2f66203/config 200
+[debug] [2023-08-11T12:13:07.593Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/project-8040d/webApps/1:261092366138:web:2fd4c0224fa125a2f66203/config {"projectId":"project-8040d","appId":"1:261092366138:web:2fd4c0224fa125a2f66203","storageBucket":"project-8040d.appspot.com","apiKey":"AIzaSyCdoyOowBBZPRmTtJXSuexJBJsRMzur-Kg","authDomain":"project-8040d.firebaseapp.com","messagingSenderId":"261092366138","measurementId":"G-FMH78GSNC5"}
+[debug] [2023-08-11T12:13:07.926Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/project-8040d [none]
+[debug] [2023-08-11T12:13:08.672Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/project-8040d 200
+[debug] [2023-08-11T12:13:08.673Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/project-8040d {"projectId":"project-8040d","projectNumber":"261092366138","displayName":"amazonproject","name":"projects/project-8040d","resources":{"hostingSite":"project-8040d"},"state":"ACTIVE","etag":"1_19e85d62-8387-4a61-909c-04f88787cee8"}
+[info] i  hosting[project-8040d]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[project-8040d]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[debug] [2023-08-11T12:13:08.708Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-08-11T12:13:08.708Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-08-11T12:13:08.708Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\Tariku\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\Tariku\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-08-11T12:13:08.871Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-08-11T12:13:08.871Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\Tariku\Desktop\amazonproject\amazon-project\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Tariku\\Desktop\\amazonproject\\amazon-project\\functions\" for Cloud Functions..."}}
+[debug] [2023-08-11T12:13:09.001Z] Validating nodejs source
+[debug] [2023-08-11T12:13:12.659Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@googleapis/androidpublisher": "^8.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.4.1",
+    "stripe": "^12.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-08-11T12:13:12.660Z] Building nodejs source
+[debug] [2023-08-11T12:13:12.660Z] Failed to find version of module node: reached end of search path C:\Users\Tariku\Desktop\amazonproject\amazon-project\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-08-11T12:13:12.663Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-08-11T12:13:12.670Z] Found firebase-functions binary at 'C:\Users\Tariku\Desktop\amazonproject\amazon-project\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8536
+
+[debug] [2023-08-11T12:13:13.280Z] Got response code 400; body Failed to generate manifest from function source: ReferenceError: functions is not defined
+[info] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ 127.0.0.1:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-08-11T17:17:58.158Z] File C:\Users\Tariku\Desktop\amazonproject\amazon-project\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tariku\\Desktop\\amazonproject\\amazon-project\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-08-11T17:17:59.181Z] Validating nodejs source
+[debug] [2023-08-11T17:18:09.259Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\Tariku\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\Tariku\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\Tariku\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\Tariku\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\Tariku\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\Tariku\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-08-11T17:18:09.263Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@googleapis/androidpublisher": "^8.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.4.1",
+    "stripe": "^12.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-08-11T17:18:09.263Z] Building nodejs source
+[debug] [2023-08-11T17:18:09.264Z] Failed to find version of module node: reached end of search path C:\Users\Tariku\Desktop\amazonproject\amazon-project\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-08-11T17:18:09.272Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-08-11T17:18:09.297Z] Found firebase-functions binary at 'C:\Users\Tariku\Desktop\amazonproject\amazon-project\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8377
+
+[debug] [2023-08-11T17:18:09.991Z] Got response code 400; body Failed to generate manifest from function source: ReferenceError: functions is not defined
+[info] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2023-08-11T17:19:27.625Z] File C:\Users\Tariku\Desktop\amazonproject\amazon-project\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tariku\\Desktop\\amazonproject\\amazon-project\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-08-11T17:19:28.644Z] Validating nodejs source
+[debug] [2023-08-11T17:19:32.098Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@googleapis/androidpublisher": "^8.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.4.1",
+    "stripe": "^12.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-08-11T17:19:32.098Z] Building nodejs source
+[debug] [2023-08-11T17:19:32.099Z] Failed to find version of module node: reached end of search path C:\Users\Tariku\Desktop\amazonproject\amazon-project\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-08-11T17:19:32.100Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-08-11T17:19:32.112Z] Found firebase-functions binary at 'C:\Users\Tariku\Desktop\amazonproject\amazon-project\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8689
+
+[debug] [2023-08-11T17:19:32.786Z] Got response code 400; body Failed to generate manifest from function source: ReferenceError: functions is not defined
+[info] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2023-08-11T17:19:46.988Z] File C:\Users\Tariku\Desktop\amazonproject\amazon-project\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tariku\\Desktop\\amazonproject\\amazon-project\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-08-11T17:19:48.007Z] Validating nodejs source
+[debug] [2023-08-11T17:19:51.470Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@googleapis/androidpublisher": "^8.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.4.1",
+    "stripe": "^12.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-08-11T17:19:51.470Z] Building nodejs source
+[debug] [2023-08-11T17:19:51.470Z] Failed to find version of module node: reached end of search path C:\Users\Tariku\Desktop\amazonproject\amazon-project\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-08-11T17:19:51.471Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-08-11T17:19:51.480Z] Found firebase-functions binary at 'C:\Users\Tariku\Desktop\amazonproject\amazon-project\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8069
+
+[debug] [2023-08-11T17:19:52.084Z] Got response code 400; body Failed to generate manifest from function source: ReferenceError: functions is not defined
+[info] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2023-08-11T17:20:03.026Z] File C:\Users\Tariku\Desktop\amazonproject\amazon-project\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tariku\\Desktop\\amazonproject\\amazon-project\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-08-11T17:20:04.049Z] Validating nodejs source
+[debug] [2023-08-11T17:20:08.537Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@googleapis/androidpublisher": "^8.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.4.1",
+    "stripe": "^12.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-08-11T17:20:08.537Z] Building nodejs source
+[debug] [2023-08-11T17:20:08.537Z] Failed to find version of module node: reached end of search path C:\Users\Tariku\Desktop\amazonproject\amazon-project\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-08-11T17:20:08.539Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-08-11T17:20:08.549Z] Found firebase-functions binary at 'C:\Users\Tariku\Desktop\amazonproject\amazon-project\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-08-11T17:20:08.567Z] File C:\Users\Tariku\Desktop\amazonproject\amazon-project\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tariku\\Desktop\\amazonproject\\amazon-project\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8116
+
+[debug] [2023-08-11T17:20:09.320Z] Got response code 400; body Failed to generate manifest from function source: ReferenceError: functions is not defined
+[info] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2023-08-11T17:20:09.570Z] Validating nodejs source
+[debug] [2023-08-11T17:20:12.679Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@googleapis/androidpublisher": "^8.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.4.1",
+    "stripe": "^12.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-08-11T17:20:12.679Z] Building nodejs source
+[debug] [2023-08-11T17:20:12.679Z] Failed to find version of module node: reached end of search path C:\Users\Tariku\Desktop\amazonproject\amazon-project\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-08-11T17:20:12.685Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-08-11T17:20:12.693Z] Found firebase-functions binary at 'C:\Users\Tariku\Desktop\amazonproject\amazon-project\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8648
+
+[debug] [2023-08-11T17:20:13.603Z] Got response code 400; body Failed to generate manifest from function source: ReferenceError: functions is not defined
+[info] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2023-08-11T17:25:16.689Z] File C:\Users\Tariku\Desktop\amazonproject\amazon-project\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tariku\\Desktop\\amazonproject\\amazon-project\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-08-11T17:25:17.695Z] Validating nodejs source
+[debug] [2023-08-11T17:25:27.731Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\Tariku\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\Tariku\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\Tariku\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\Tariku\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\Tariku\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\Tariku\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-08-11T17:25:27.732Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@googleapis/androidpublisher": "^8.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.4.1",
+    "stripe": "^12.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-08-11T17:25:27.732Z] Building nodejs source
+[debug] [2023-08-11T17:25:27.733Z] Failed to find version of module node: reached end of search path C:\Users\Tariku\Desktop\amazonproject\amazon-project\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-08-11T17:25:27.734Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-08-11T17:25:27.743Z] Found firebase-functions binary at 'C:\Users\Tariku\Desktop\amazonproject\amazon-project\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-08-11T17:25:27.753Z] File C:\Users\Tariku\Desktop\amazonproject\amazon-project\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tariku\\Desktop\\amazonproject\\amazon-project\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8055
+
+[debug] [2023-08-11T17:25:28.815Z] Validating nodejs source
+[debug] [2023-08-11T17:25:38.862Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\Tariku\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\Tariku\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\Tariku\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\Tariku\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\Tariku\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\Tariku\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-08-11T17:25:38.864Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@googleapis/androidpublisher": "^8.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.4.1",
+    "stripe": "^12.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-08-11T17:25:38.864Z] Building nodejs source
+[debug] [2023-08-11T17:25:38.864Z] Failed to find version of module node: reached end of search path C:\Users\Tariku\Desktop\amazonproject\amazon-project\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-08-11T17:25:38.905Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-08-11T17:25:38.932Z] Found firebase-functions binary at 'C:\Users\Tariku\Desktop\amazonproject\amazon-project\functions\node_modules\.bin\firebase-functions'
+[info] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[info] Serving at port 8763
+
